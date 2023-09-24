@@ -1,0 +1,115 @@
+/* Zmiana tła całej aplikacji */
+.App {
+  min-height: 100vh;
+  text-align: center;
+  background-image: url('wallpaper3.jpg'); /* Kolor tła całej strony */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Zmiana wyglądu nagłówka */
+.App-header {
+  grid-column: span 3;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 25px; 
+  color: black;
+}
+
+/* Zmiana wyglądu stopki */
+.App-footer {
+  grid-column: 1 / span 3;
+  font-size: calc(10px + 2vmin); 
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+/* Zmiana stylu ikony/logo */
+.App-logo {
+  width: 50px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+/* Zmiana wyglądu głównej treści */
+.content {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: #cce6ff;
+  padding: 3rem;
+}
+
+/* Zmiana wyglądu przycisków #jutro, #pojutrze, #popojutrze */
+#jutro,
+#pojutrze,
+#popojutrze {
+  background-color: #80e6ff;
+  color: black;
+  display: inline-block;
+  padding: 10px 20px; /* Zmniejszenie marginesów */
+  border-radius: 5px; /* Zmniejszenie zaokrąglenia */
+  margin: 1rem 0; /* Mniejszy odstęp */
+}
+
+/* Zmiana stylu treści */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #90c6f8;
+  padding: 6rem; /* Zmniejszenie wewnętrznego odstępu */
+  margin-top: 30px;
+  
+}
+
+/* Zmiana wyglądu informacji o pogodzie */
+.weather-info {
+  display: flex;
+  flex-wrap: wrap; /* Zmiana na zwijanie na małych ekranach */
+  justify-content: center; /* Wyśrodkowanie elementów */
+  margin-top: 1rem; /* Mniejszy margines górnego odstępu */
+}
+
+/* Zmiana wyglądu prognozy na dziś */
+.today-forecast {
+  display: flex;
+  flex-wrap: wrap; /* Zmiana na zwijanie na małych ekranach */
+  justify-content: space-between;
+  padding: 50px; /* Zwiększenie wewnętrznego odstępu */
+}
+
+/* Zmiana wyglądu elementu prognozy */
+.forecast-item {
+  margin-right: 50px; /* Mniejszy margines */
+}
+
+/* Zmiana wyglądu prognozy wielodniowej */
+.multi-day-forecast {
+  display: flex;
+  flex-wrap: wrap; /* Zmiana na zwijanie na małych ekranach */
+  justify-content: space-between;
+  padding: 20px; /* Mniejszy wewnętrzny odstęp */
+}
+
+/* Zmiana wyglądu elementu prognozy wielodniowej */
+.multi-day-forecast > div {
+  flex-grow: 1;
+  background-color: white;
+  padding: 1rem; /* Mniejszy wewnętrzny odstęp */
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 5px; /* Mniejszy margines */
+}
+
+.forecast-table{
+  padding:20px;
+  padding-right: 30px;
+  
+}
+
+.column-header{
+  padding-right: 20px;
+}
